@@ -1,0 +1,213 @@
+body #warpper {
+  display: flex;
+  justify-content: center;
+  margin-top: 82px; }
+  body #warpper .bannerSheet {
+    width: 360px;
+    height: 530px;
+    background: url("../img/bg-sheet.png") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden; }
+    body #warpper .bannerSheet img {
+      position: absolute; }
+      body #warpper .bannerSheet img:nth-child(1) {
+        top: 30px;
+        left: 60px;
+        width: 240px; }
+      body #warpper .bannerSheet img:nth-child(2) {
+        top: 300px;
+        left: 85px;
+        width: 190px; }
+      body #warpper .bannerSheet img:nth-child(3) {
+        position: absolute;
+        z-index: 10;
+        top: 600px;
+        left: 105px;
+        width: 150px;
+        transition: transform 2s linear; }
+      body #warpper .bannerSheet img:nth-child(4) {
+        position: absolute;
+        z-index: 11;
+        top: -200px;
+        left: 43px;
+        width: 272px; }
+      body #warpper .bannerSheet img:nth-child(5) {
+        top: -100px;
+        right: 40px;
+        width: 20px; }
+      body #warpper .bannerSheet img:nth-child(6) {
+        top: -100px;
+        right: 2px;
+        width: 45px; }
+      body #warpper .bannerSheet img:nth-child(7) {
+        top: -100px;
+        left: 0px;
+        width: 52px; }
+      body #warpper .bannerSheet img:nth-child(8) {
+        top: -100px;
+        left: 0px;
+        width: 78px; }
+      body #warpper .bannerSheet img:nth-child(9) {
+        top: -100px;
+        left: 102px;
+        width: 57px; }
+      body #warpper .bannerSheet img:nth-child(10) {
+        top: -100px;
+        left: 215px;
+        width: 57px; }
+      body #warpper .bannerSheet img:nth-child(11) {
+        top: -100px;
+        left: -2px;
+        width: 122px; }
+      body #warpper .bannerSheet img:nth-child(12) {
+        top: -100px;
+        right: 3px;
+        width: 122px; }
+      body #warpper .bannerSheet img:nth-child(13) {
+        position: absolute;
+        z-index: 4;
+        top: -100px;
+        left: 14px;
+        width: 122px; }
+      body #warpper .bannerSheet img:nth-child(14) {
+        top: -100px;
+        left: 200px;
+        width: 150px; }
+    body #warpper .bannerSheet .rotate {
+      animation-name: rotate;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      transform-origin: 50% 50%; }
+@keyframes rotate {
+  0% {
+    transform: rotate(2deg); }
+  50% {
+    transform: rotate(-2deg); }
+  100% {
+    transform: rotate(2deg); } }
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*# sourceMappingURL=style.css.map */
