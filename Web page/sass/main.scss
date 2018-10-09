@@ -1,0 +1,23 @@
+// <-- ~~~~~~~~~~~~~~~~~~    Variables    ~~~~~~~~~~~~~~~~~~ --> //
+$txt-col: white;
+$txt-col2: #d4d2d2;
+$txt-col-trend: #c43235; //#5e0231; //#6534ff; //#b56969; //#6ed3cf;
+$txt-col-dark: #696969;
+$txt-col-darker: #a9abb0;
+$bg-col: #0c0c0c;
+$bg-col2: #111;
+$bg-col-nav: #222;
+$bg-col-input: #151515;
+$main-font: 'Montserrat',
+sans-serif;
+$font-2: "Times New Roman";
+
+// <-- ~~~~~~~~~~~~~~~~~~    General Styles    ~~~~~~~~~~~~~~~~~~ --> //
+body {
+  font-family: $main-font;
+  position: relative;
+  
+}
+
+// <-- ~~~~~~~~~~~~~~~~~~    Imports    ~~~~~~~~~~~~~~~~~~ --> //
+@import 'reset';
