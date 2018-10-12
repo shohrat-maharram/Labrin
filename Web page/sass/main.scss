@@ -13,85 +13,125 @@ sans-serif;
 // <-- ~~~~~~~~~~~~~~~~~~    General Styles    ~~~~~~~~~~~~~~~~~~ --> //
 body {
   font-family: $main-font;
+  background: url("../img/main-bg.png") center center no-repeat fixed;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   #wrapper {
-    position: relative;
-    width: 100vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to right, rgba(35, 23, 40, .9), rgba(35, 23, 40, .3), rgba(255, 255, 255, .1)); // width: 100vw;
     height: 100%;
-    &::after {
-      position: absolute;
-      content: "";
-      background: url("../img/main-bg.png") center center no-repeat fixed;
-      background-size: cover;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: -1;
-    }
+    width: 100%;
     .content {
-      width: 100vw;
+      width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      .overlay {
-        width: 100vw;
-        height: 100%;
-        background-image: linear-gradient(to right, rgba(35, 23, 40, .9), rgba(35, 23, 40, .8), rgba(255, 255, 255, .1));
-        .left {
-          margin-left: 60px;
-          padding-top: 50px;
-          width: 210px;
-          .azeristu-logo {
-            width: 240px;
+      .left {
+        margin-left: 60px;
+        padding-top: 35px;
+        width: 170px;
+        .azeristu-logo {
+          width: 190px;
+        }
+        .heart {
+          font-family: $main-font;
+          color: rgba(183, 183, 183, 0.7);
+          margin-top: 35px;
+          font-size: 18px;
+          i {
+            margin-right: 7px;
+            color: rgba(183, 183, 183, 0.4);
           }
-          .heart {
+        }
+        .links {
+          text-align: right;
+          margin-top: 50px;
+          a {
             font-family: $main-font;
-            color: rgba(183, 183, 183, 0.7);
-            margin-top: 50px;
-            font-size: 21px;
-            i {
-              margin-right: 7px;
-              color: rgba(183, 183, 183, 0.4);
-            }
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.24);
+            font-size: 15px;
+            display: inline-block;
+            text-align: center;
+            border: 1px solid rgba(169, 154, 154, 0.24);
+            padding: 13px 21px;
+            border-radius: 4px;
+            margin: 0 auto;
           }
-          .links {
-            text-align: right;
-            a {
-              font-family: $main-font;
-              text-decoration: none;
-              color: rgba(255, 255, 255, 0.24);
-              font-size: 16px;
-              display: inline-block;
-              text-align: center;
-              border: 1px solid;
-              padding: 13px 21px;
-              border-radius: 4px;
-              margin: 0 auto;
-            }
-            .lorem1 {
-              margin-top: 80px;
-              margin-bottom: 10px;
-            }
+          .lorem1 {
+            margin-bottom: 10px;
           }
-          .store {
-            display: block;
-            width: 148px;
-            float: right;
-            margin-top: 50px;
+        }
+        .store {
+          display: block;
+          width: 144px;
+          float: right;
+          margin-top: 62px;
+        }
+        .azeristu {
+          width: 100px;
+          margin-top: 50px;
+          margin-right: 20px;
+          float: right;
+          &::after {
+            content: "";
+            clear: both;
           }
-          .azeristu {
-            width: 100px;
-            margin-top: 50px;
-            float: right;
-            &::after{
-              content: "";
-              clear: both;
+        }
+        .social {
+          display: flex;
+          justify-content: right;
+          margin-top: 40px;
+          float: right;
+          a {
+            font-family: $main-font;
+            padding: 5px 8px;
+            color: rgba(255, 255, 255, 0.24);
+            border: 1px solid rgba(169, 154, 154, 0.24);
+            border-radius: 3px;
+            margin-right: 10px;
+            text-decoration: none;
+            font-size: 16px;
+            &:first-child {
+              font-size: 12px;
+              padding: 5px 11px;
+              i {
+                font-size: 16px;
+                margin-left: 5px;
+                line-height: 12px;
+                margin-top: 4px;
+                vertical-align: bottom;
+              }
+            }
+            &:last-child {
+              margin-right: 0px;
             }
           }
         }
-        .main {
-          width: 30%;
+        .paragraph {
+          margin-top: 15px;
+          float: right;
+          p {
+            color: rgba(255, 255, 255, 0.5);
+            font-family: $main-font;
+            font-size: 10px;
+            line-height: 14px;
+            text-align: right;
+          }
         }
       }
+      .main {
+        // width: 30%;
+      }
+    }
+    .clear {
+      clear: both;
     }
   }
 }

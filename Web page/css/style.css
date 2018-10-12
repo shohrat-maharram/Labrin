@@ -1,71 +1,103 @@
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  background: url("../img/main-bg.png") center center no-repeat fixed;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
   body #wrapper {
-    position: relative;
-    width: 100vw;
-    height: 100%; }
-    body #wrapper::after {
-      position: absolute;
-      content: "";
-      background: url("../img/main-bg.png") center center no-repeat fixed;
-      background-size: cover;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: -1; }
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to right, rgba(35, 23, 40, 0.9), rgba(35, 23, 40, 0.3), rgba(255, 255, 255, 0.1));
+    height: 100%;
+    width: 100%; }
     body #wrapper .content {
-      width: 100vw;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); }
-      body #wrapper .content .overlay {
-        width: 100vw;
-        height: 100%;
-        background-image: linear-gradient(to right, rgba(35, 23, 40, 0.9), rgba(35, 23, 40, 0.8), rgba(255, 255, 255, 0.1)); }
-        body #wrapper .content .overlay .left {
-          margin-left: 60px;
-          padding-top: 50px;
-          width: 210px; }
-          body #wrapper .content .overlay .left .azeristu-logo {
-            width: 240px; }
-          body #wrapper .content .overlay .left .heart {
+      width: 100%;
+      height: 100%; }
+      body #wrapper .content .left {
+        margin-left: 60px;
+        padding-top: 35px;
+        width: 170px; }
+        body #wrapper .content .left .azeristu-logo {
+          width: 190px; }
+        body #wrapper .content .left .heart {
+          font-family: "Roboto", sans-serif;
+          color: rgba(183, 183, 183, 0.7);
+          margin-top: 35px;
+          font-size: 18px; }
+          body #wrapper .content .left .heart i {
+            margin-right: 7px;
+            color: rgba(183, 183, 183, 0.4); }
+        body #wrapper .content .left .links {
+          text-align: right;
+          margin-top: 50px; }
+          body #wrapper .content .left .links a {
             font-family: "Roboto", sans-serif;
-            color: rgba(183, 183, 183, 0.7);
-            margin-top: 50px;
-            font-size: 21px; }
-            body #wrapper .content .overlay .left .heart i {
-              margin-right: 7px;
-              color: rgba(183, 183, 183, 0.4); }
-          body #wrapper .content .overlay .left .links {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.24);
+            font-size: 15px;
+            display: inline-block;
+            text-align: center;
+            border: 1px solid rgba(169, 154, 154, 0.24);
+            padding: 13px 21px;
+            border-radius: 4px;
+            margin: 0 auto; }
+          body #wrapper .content .left .links .lorem1 {
+            margin-bottom: 10px; }
+        body #wrapper .content .left .store {
+          display: block;
+          width: 144px;
+          float: right;
+          margin-top: 62px; }
+        body #wrapper .content .left .azeristu {
+          width: 100px;
+          margin-top: 50px;
+          margin-right: 20px;
+          float: right; }
+          body #wrapper .content .left .azeristu::after {
+            content: "";
+            clear: both; }
+        body #wrapper .content .left .social {
+          display: flex;
+          justify-content: right;
+          margin-top: 40px;
+          float: right; }
+          body #wrapper .content .left .social a {
+            font-family: "Roboto", sans-serif;
+            padding: 5px 8px;
+            color: rgba(255, 255, 255, 0.24);
+            border: 1px solid rgba(169, 154, 154, 0.24);
+            border-radius: 3px;
+            margin-right: 10px;
+            text-decoration: none;
+            font-size: 16px; }
+            body #wrapper .content .left .social a:first-child {
+              font-size: 12px;
+              padding: 5px 11px; }
+              body #wrapper .content .left .social a:first-child i {
+                font-size: 16px;
+                margin-left: 5px;
+                line-height: 12px;
+                margin-top: 4px;
+                vertical-align: bottom; }
+            body #wrapper .content .left .social a:last-child {
+              margin-right: 0px; }
+        body #wrapper .content .left .paragraph {
+          margin-top: 15px;
+          float: right; }
+          body #wrapper .content .left .paragraph p {
+            color: rgba(255, 255, 255, 0.5);
+            font-family: "Roboto", sans-serif;
+            font-size: 10px;
+            line-height: 14px;
             text-align: right; }
-            body #wrapper .content .overlay .left .links a {
-              font-family: "Roboto", sans-serif;
-              text-decoration: none;
-              color: rgba(255, 255, 255, 0.24);
-              font-size: 16px;
-              display: inline-block;
-              text-align: center;
-              border: 1px solid;
-              padding: 13px 21px;
-              border-radius: 4px;
-              margin: 0 auto; }
-            body #wrapper .content .overlay .left .links .lorem1 {
-              margin-top: 80px;
-              margin-bottom: 10px; }
-          body #wrapper .content .overlay .left .store {
-            display: block;
-            width: 148px;
-            float: right;
-            margin-top: 50px; }
-          body #wrapper .content .overlay .left .azeristu {
-            width: 100px;
-            margin-top: 50px;
-            float: right; }
-            body #wrapper .content .overlay .left .azeristu::after {
-              content: "";
-              clear: both; }
-        body #wrapper .content .overlay .main {
-          width: 30%; }
+    body #wrapper .clear {
+      clear: both; }
 
 a,
 abbr,
